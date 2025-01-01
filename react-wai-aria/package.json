@@ -1,0 +1,46 @@
+{
+  "name": "react-wai-aria",
+  "version": "0.0.2",
+  "description": "Provides WAI-ARIA compliant components for web accessibility in a React library environment. 리액트 라이브러리 환경에서 웹 접근성에 부합한 WAI-ARIA 컴포넌트를 제공합니다.",
+  "keywords" : ["WAI-ARIA", "wai-aria", "웹접근성", "리액트 접근성", "react aria", "react wai-aria", "web accessibility", "react web accessibility"],
+  "type": "module",
+  "license": "MIT",
+  "main": "dist/index.umd.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "path": "^0.12.7",
+    "pathe": "^1.1.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "vite-plugin-dts": "^3.9.1",
+    "zustand": "^4.5.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
+    "@typescript-eslint/parser": "^7.2.0",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0"
+  }
+}
